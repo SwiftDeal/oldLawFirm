@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{echo CDN}admin/css/style.default.css" type="text/css" />
+    <link rel="stylesheet" href="{echo CDN}admin/prettify/prettify.css" type="text/css" />
+    <script type="text/javascript" src="{echo CDN}admin/prettify/prettify.js"></script>
+    <script type="text/javascript" src="{echo CDN}admin/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="{echo CDN}admin/js/jquery-migrate-1.1.1.min.js"></script>
+    <script type="text/javascript" src="{echo CDN}admin/js/jquery-ui-1.9.2.min.js"></script>
+    <script type="text/javascript" src="{echo CDN}admin/js/jquery.flot.min.js"></script>
+    <script type="text/javascript" src="{echo CDN}admin/js/jquery.flot.resize.min.js"></script>
+    <script type="text/javascript" src="{echo CDN}admin/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{echo CDN}admin/js/modernizr.min.js"></script>
+    <script type="text/javascript" src="{echo CDN}admin/js/detectizr.min.js"></script>
+    <script type="text/javascript" src="{echo CDN}admin/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="{echo CDN}admin/js/custom.js"></script>
+    <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
+</head>
+<body>
+    <div class="mainwrapper">
+        {include layouts/navigation/admin_header.html}
+        {ayield action}
+        <div class="clearfix"></div>
+
+        <div class="footer">
+            <div class="footerleft">IT Partner : Cloudstuffs</div>
+            <div class="footerright">&copy; <a href="https://www.clodstuffs.com" target="_blank">
+            	Cloudstuffs
+            </a> - <a href="http://twitter.com/themepixels">Follow me on Twitter</a> - <a href="http://dribbble.com/themepixels">Follow me on Dribbble</a></div>
+            </div><!--footer-->
+
+            </div><!--mainwrapper-->
+            <script type="text/javascript" src="{echo CDN}admin/js/dashboard.js"></script>
+        </body>
+    </html>

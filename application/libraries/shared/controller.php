@@ -19,6 +19,15 @@ namespace Shared {
          */
         protected $_user;
 
+        public function seo($params = array()) {
+            $seo = Registry::get("seo");
+            foreach ($params as $key => $value) {
+                $property = "set" . ucfirst($key);
+                $seo->$property($value);
+            }
+            $params["view"]->set("seo", $seo);
+        }
+
         /**
          * @protected
          */
@@ -34,7 +43,7 @@ namespace Shared {
         public function _secure() {
             $user = $this->getUser();
             if (!$user) {
-                header("Location: /login.html");
+                header("Location: /home");
                 exit();
             }
         }
@@ -68,7 +77,7 @@ namespace Shared {
                 $controller = Registry::get("controller");
                 $user = $session->get("user");
                 if ($user) {
-                    $controller->user = \User::first(array("id = ?" => $user));
+                    $controller->user = \User::first(array("id = ?" => $user->id));
                 }
             });
 

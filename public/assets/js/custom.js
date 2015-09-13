@@ -303,3 +303,8 @@ $(document).ready(function()
 	
 	
 });
+$(document).ready(function (){
+  var domain = $("#domain").val();
+  domain = domain+"/public/assets/images/photos/error.jpg";
+  $("#error-image").css('background-image','url("'+domain+'")');
+})

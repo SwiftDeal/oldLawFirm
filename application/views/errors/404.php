@@ -125,7 +125,7 @@
                         </div>
                         <br class="clear">
                     </div>
-                    <a href="http://www.thorntaxlaw.com/" class="sticky-logo"><img src="<?php echo $domain;?>/public/assets/images/layout/sticky-logo.jpg" alt=""></a>
+                    <a href="" class="sticky-logo"><img src="<?php echo $domain;?>/public/assets/images/layout/sticky-logo.jpg" alt=""></a>
                     <div class="right">
                         <h2 class="animated pulse">Call Us Confidentially Now: <a href="tel:2023494033"><span class="phone">202-349-4033</span></a></h2>
                         <div class="top-search">
@@ -201,7 +201,8 @@
       <nav id="mobile-menu">
   <div class="mobile-phone"><a href="tel:+919990166950"><i class="fa fa-phone"></i></a></div>
 </nav>
-    <div class="top-background" style="background-image: url('<?php echo $domain;?>public/images/photos/_default.jpg');">
+<input type="hidden" id="domain" value="<?php echo $domain;?>">
+    <div class="top-background" id="error-image" >
           <div class="container caption-1 all-slogan">
         <div class="slogan clearfix slogin-place">
           <h2>Page Not Found (404 )</h2>
@@ -213,7 +214,7 @@
     <div class="container group">
 
 <div id="slidebox" class="essence-box">
-  <img src="/images/layout/thorntaxlaw-logo.png" alt="Thorn Law Group"/>
+  <img src="<?php echo $domain;?>/public/assets/images/layout/thorntaxlaw-logo.png" alt="Thorn Law Group"/>
   <h2>Get Trusted Help Now</h2>
   <p>Over 30 years of expertise for your complicated tax law issues.</p>
   <div class="buttons">
